@@ -1,6 +1,5 @@
 import Head from "next/head";
-import { Heading } from "@chakra-ui/react";
-import { Box } from "@chakra-ui/react";
+import { Heading, Text, Flex, Box, Image, HStack } from "@chakra-ui/react";
 
 export default function About() {
   return (
@@ -15,6 +14,7 @@ export default function About() {
         height="100%"
         overflow="auto"
         as="main"
+        color="whiteAlpha.900"
         bg="linear-gradient(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
       >
         <Heading
@@ -28,6 +28,42 @@ export default function About() {
         >
           About
         </Heading>
+        <p>
+          This app was developed by a team of dedicated, gamers from the Boys &
+          Girls Club of the Umpqua Valley. The app was created to help Smash
+          Bros. Ultimate playres from around the world, regardless of skill,
+          level up their game.
+        </p>
+        <br></br>
+        <p>Contact Us At:</p>
+        <p>Email@email.com</p>
+        <br></br>
+        <p>Support Us</p>
+        <p>Help support our Club and this app by making a donation.</p>
+        <br></br>
+        <Flex>
+          <Box>
+            <Text>Money!</Text>
+            <Image
+              boxSize="50px"
+              src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
+            />
+          </Box>
+          <Box>
+            <Text>Pizza!</Text>
+            <Image
+              boxSize="50px"
+              src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
+            />
+          </Box>
+          <Box>
+            <Text>Coffee!</Text>
+            <Image
+              boxSize="50px"
+              src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
+            />
+          </Box>
+        </Flex>
       </Box>
     </>
   );
