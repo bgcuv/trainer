@@ -1,13 +1,19 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "@fontsource/montserrat";
 
 const theme = extendTheme({
+  components: {
+    Heading: {
+      baseStyle: {
+        fontFamily: "Montserrat",
+      },
+    },
+  },
   styles: {
     global: {
-      html: {
+      "html, body": {
         height: "100%",
-      },
-      body: {
-        height: "100%",
+        fontFamily: "Montserrat",
       },
       "#__next": {
         height: "100%",
