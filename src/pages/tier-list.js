@@ -473,7 +473,12 @@ export default function TierList() {
           <Stack gap={4} p={4}>
             {characters.map((character) => {
               return (
-                <Card bg={"gray.700"} maxW="max-content" color="whiteAlpha.900">
+                <Card
+                  bg={"gray.700"}
+                  maxW="max-content"
+                  color="whiteAlpha.900"
+                  key={character.name}
+                >
                   <CardHeader py={2}>{character.name}</CardHeader>
                   <CardBody py={2}>
                     <Image
