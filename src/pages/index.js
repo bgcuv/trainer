@@ -1,5 +1,14 @@
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  IconButton,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import Head from "next/head";
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import { px } from "framer-motion";
 
 export default function Home() {
   return (
@@ -31,6 +40,18 @@ export default function Home() {
           top="100px"
           left="200px"
           src="https://ssb.wiki.gallery/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
+        />
+        <IconButton
+          icon={<ArrowBackIcon />}
+          position="absolute"
+          bottom="8px"
+          left="16px"
+        />
+        <IconButton
+          icon={<ArrowForwardIcon />}
+          position="absolute"
+          bottom="8px"
+          right="16px"
         />
       </Box>
     </>
