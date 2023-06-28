@@ -450,19 +450,6 @@ const characters = [
   },
 ];
 
-<Flex>
-  <Box>
-    <Text>Donate!</Text>
-    <Image src="money please" />
-  </Box>
-  <Box>
-    <Text>Pizza!</Text>
-  </Box>
-  <Box>
-    <Text>Coffee!</Text>
-  </Box>
-</Flex>;
-
 export default function TierList() {
   return (
     <>
