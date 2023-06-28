@@ -45,6 +45,7 @@ export default function About() {
           <Box>
             <Text>Money!</Text>
             <Image
+              alt=""
               boxSize="50px"
               src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
             />
@@ -52,6 +53,7 @@ export default function About() {
           <Box>
             <Text>Pizza!</Text>
             <Image
+              alt=""
               boxSize="50px"
               src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
             />
@@ -59,6 +61,7 @@ export default function About() {
           <Box>
             <Text>Coffee!</Text>
             <Image
+              alt=""
               boxSize="50px"
               src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
             />
