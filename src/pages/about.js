@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export default function About() {
   return (
@@ -9,7 +11,24 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>About</main>
+      <Box
+        height="100%"
+        overflow="auto"
+        as="main"
+        bg="linear-gradient(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
+      >
+        <Heading
+          as="h1"
+          size="6xl"
+          noOfLines={1}
+          Text
+          fontSize="6xl"
+          color="tomato"
+          textAlign="center"
+        >
+          About
+        </Heading>
+      </Box>
     </>
   );
 }
