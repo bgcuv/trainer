@@ -14,6 +14,7 @@ const theme = extendTheme({
       "html, body": {
         height: "100%",
         fontFamily: "Montserrat",
+        overflowX: "hidden",
       },
       "#__next": {
         height: "100%",

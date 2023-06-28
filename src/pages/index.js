@@ -1,4 +1,4 @@
-import { Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,7 +10,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Box
+        color="whiteAlpha.900"
+        as="main"
+        height="100%"
+        bgGradient="linear(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
+      >
         <Heading>Smash Bros Ultimate Trainer</Heading>
         <Text>
           This app is here to help you get better at Smash Bros Ultimate!
@@ -27,7 +32,7 @@ export default function Home() {
           left="200px"
           src="https://ssb.wiki.gallery/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
         />
-      </main>
+      </Box>
     </>
   );
 }
