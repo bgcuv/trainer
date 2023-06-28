@@ -23,12 +23,14 @@ export default function Home() {
         </Text>
         <Image
           postion="absolute"
+          alt=""
           top="100px"
           left="200px"
           src="https://static.wikia.nocookie.net/mario/images/4/41/SMPBowserJr.png"
         />
         <Image
           position="absolute"
+          alt=""
           top="100px"
           left="200px"
           src="https://ssb.wiki.gallery/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
