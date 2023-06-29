@@ -7,6 +7,7 @@ import {
   Link,
   Text,
   AbsoluteCenter,
+  Flex,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "../components/Nav";
@@ -20,7 +21,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box
+      <Flex
+        direction="column"
         p={4}
         color="whiteAlpha.900"
         as="main"
@@ -65,11 +67,9 @@ export default function Home() {
           height="300px"
           src="./fighters/25/01.png"
         />
-        <AbsoluteCenter>
-          <Image alt="" height="300px" w="100%" src="./fighters/40/01.png" />
-        </AbsoluteCenter>
+        <Image alt="" height="300px" margin="auto" src="./fighters/40/01.png" />
         <Nav left={"about"} right={"tips"} />
-      </Box>
+      </Flex>
     </>
   );
 }

@@ -1,4 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  UnorderedList,
+  ListItem,
+  Center,
+  Heading,
+  Image,
+  Link,
+  Flex,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "@/components/Nav";
 export default function Tips() {
@@ -10,15 +19,92 @@ export default function Tips() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box
+      <Flex
+        direction="column"
+        gap={8}
         p={4}
         color="whiteAlpha.900"
         as="main"
         height="100%"
         bgGradient="linear(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
       >
-        Tips
-      </Box>
+        <Center flexDirection={"column"}>
+          <Heading>Tips</Heading>
+        </Center>
+        <Box>
+          <Heading as="h2" size="md">
+            Controller Setup
+          </Heading>
+          <UnorderedList>
+            <ListItem>Enable Tilts</ListItem>
+            <ListItem>Disable Stick Jump</ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h2" size="md">
+            Finding a Main
+          </Heading>
+          <UnorderedList>
+            <ListItem>Play random</ListItem>
+            <ListItem>Play them if you like their look</ListItem>
+            <ListItem>Play them if you lose to them</ListItem>
+            <ListItem>
+              Use{" "}
+              <Link color="blue.900" href="/tier-list">
+                our guide!
+              </Link>
+            </ListItem>
+          </UnorderedList>
+        </Box>
+      </Flex>{" "}
+      <Image
+        position="absolute"
+        alt=""
+        bottom="140px"
+        right={["10px", "100px", "240px"]}
+        height="240px"
+        src="./fighters/08/01.png"
+      />
+      <Image
+        position="absolute"
+        alt=""
+        bottom="120px"
+        left="-40px"
+        height="240px"
+        src="./fighters/32/01.png"
+      />
+      <Image
+        position="absolute"
+        alt=""
+        top="400px"
+        right="-40px"
+        height="240px"
+        src="./fighters/38/01.png"
+      />
+      <Image
+        position="absolute"
+        alt=""
+        top="60px"
+        right="-40px"
+        height="160px"
+        src="./fighters/25/01.png"
+      />
+      <Image
+        position="absolute"
+        alt=""
+        bottom="0px"
+        left={["200px", "240px", "300px"]}
+        height="200px"
+        src="./fighters/68/01.png"
+      />
+      <Image
+        position="absolute"
+        alt=""
+        bottom="360px"
+        left={["20px", "40px", "80px"]}
+        height="160px"
+        src="./fighters/55/01.png"
+      />
       <Nav left="" right="tier-list" />
     </>
   );
