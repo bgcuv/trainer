@@ -11,12 +11,14 @@ export default function Tips() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box
-        height="100%"
-        overflow="auto"
-        as="main"
+        p={4}
         color="whiteAlpha.900"
-        bg="linear-gradient(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
-      ></Box>
+        as="main"
+        height="100%"
+        bgGradient="linear(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
+      >
+        Tips
+      </Box>
       <Nav left="" right="tier-list" />
     </>
   );
