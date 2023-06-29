@@ -1,6 +1,15 @@
-import { Box, Heading, IconButton, Image, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  IconButton,
+  Center,
+  Image,
+  Link,
+  Text,
+  AbsoluteCenter,
+} from "@chakra-ui/react";
 import Head from "next/head";
-import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
@@ -12,49 +21,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box
+        p={4}
         color="whiteAlpha.900"
         as="main"
         height="100%"
         bgGradient="linear(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
       >
-        <Heading>Smash Bros Ultimate Trainer</Heading>
-        <Text>
-          This app is here to help you get better at Smash Bros Ultimate!
-        </Text>
+        <Center flexDirection="column">
+          <Heading>Smash Bros Ultimate Trainer</Heading>
+          <Text>
+            This app is here to help you get better at Smash Bros Ultimate!
+          </Text>
+        </Center>
         <Image
-          postion="absolute"
+          position="absolute"
           alt=""
-          top="100px"
-          left="200px"
-          src="https://static.wikia.nocookie.net/mario/images/4/41/SMPBowserJr.png"
+          top="140px"
+          left="-10px"
+          height="240px"
+          src="./portraits/full/bowser_jr.png"
         />
         <Image
           position="absolute"
           alt=""
-          top="100px"
-          left="200px"
-          src="https://ssb.wiki.gallery/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
+          top="200px"
+          right="-80px"
+          height="300px"
+          src="./portraits/full/kirby.png"
         />
-        <Link href="/about">
-          <IconButton
-            icon={<ArrowBackIcon />}
-            position="absolute"
-            bottom="8px"
-            left="16px"
-            bg="#fcefb4"
-            color="blackAlpha.900"
-          />
-        </Link>
-        <Link href="/tips">
-          <IconButton
-            icon={<ArrowForwardIcon />}
-            position="absolute"
-            bottom="8px"
-            right="16px"
-            bg="#fcefb4"
-            color="blackAlpha.900"
-          />
-        </Link>
+        <Image
+          position="absolute"
+          alt=""
+          top="400px"
+          right="-80px"
+          height="300px"
+          src="./fighters/01/01.png"
+        />
+        <Image
+          position="absolute"
+          alt=""
+          bottom="60px"
+          left="-60px"
+          height="300px"
+          src="./fighters/25/01.png"
+        />
+        <AbsoluteCenter>
+          <Image alt="" height="300px" w="100%" src="./fighters/40/01.png" />
+        </AbsoluteCenter>
+        <Nav left={"about"} right={"tips"} />
       </Box>
     </>
   );
