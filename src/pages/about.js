@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { Heading, Text, Flex, Box, Image, HStack } from "@chakra-ui/react";
+import {
+  Heading,
+  Text,
+  Flex,
+  Box,
+  Image,
+  HStack,
+  Feature,
+} from "@chakra-ui/react";
 
 export default function About() {
   return (
