@@ -1,6 +1,24 @@
 import Head from "next/head";
-import Nav from "@/components/Nav";
-import { Heading, Text, Flex, Box, Image, Feature } from "@chakra-ui/react";
+import { Heading, Text, Flex, Box, Image, Center } from "@chakra-ui/react";
+
+function Feature({ title, desc, ...rest }) {
+  return (
+    <Box
+      p={1}
+      borderWidth="0px"
+      {...rest}
+      minW="180px"
+      border="0px,5px,0px,5px"
+      padding="5px,0px,10px,0px"
+    >
+      <Center flexDirection={"column"}>
+        <Heading fontSize="lg">{title}</Heading>
+        <Text mt={1}>{desc}</Text>
+        <Image {...rest} boxSize="25px" />
+      </Center>
+    </Box>
+  );
+}
 
 export default function About() {
   return (
@@ -46,28 +64,25 @@ export default function About() {
         </p>
         <p>Help support our Club and this app by making a donation.</p>
         <br></br>
-        <Flex>
-          <Box>
-            <Text>Money!</Text>
-            <Image
-              boxSize="50px"
-              src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
-            />
-          </Box>
-          <Box>
-            <Text>Pizza!</Text>
-            <Image
-              boxSize="50px"
-              src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
-            />
-          </Box>
-          <Box>
-            <Text>Coffee!</Text>
-            <Image
-              boxSize="50px"
-              src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
-            />
-          </Box>
+        <Flex gap={4} flexWrap="wrap">
+          <Feature
+            title="Money, Plz"
+            fontSize="xs"
+            desc="Help Fund our Project."
+            src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
+          />
+          <Feature
+            fontSize="xs"
+            title="Pizza, Plz"
+            desc="Help Feed our Coders"
+            src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
+          />
+          <Feature
+            fontSize="xs"
+            title="Coffe, Plz"
+            desc="Fuel our Coders"
+            src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
+          />
         </Flex>
         <br></br>
         <br></br>
@@ -84,7 +99,6 @@ export default function About() {
           </Flex>
         </Box>
       </Box>
-      <Nav left="trainer" right="" />
     </>
   );
 }
