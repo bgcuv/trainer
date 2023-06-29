@@ -1,6 +1,6 @@
 import Head from "next/head";
-
-export default function Trainer() {
+import Nav from "@/components/Nav";
+export default function Home() {
   return (
     <>
       <Head>
@@ -9,7 +9,8 @@ export default function Trainer() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>trainer</main>
+      <main></main>
+      <Nav left="tier-list" right="about" />
     </>
   );
 }
