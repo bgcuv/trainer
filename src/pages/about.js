@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Heading, Text, Flex, Box, Image, Center } from "@chakra-ui/react";
+import Nav from "@/components/Nav";
 
 function Feature({ title, desc, ...rest }) {
   return (
@@ -99,6 +100,7 @@ export default function About() {
           </Flex>
         </Box>
       </Box>
+      <Nav left="trainer" right="" />
     </>
   );
 }
