@@ -5,7 +5,9 @@ function Feature({ title, desc, ...rest }) {
   return (
     <Box
       p={1}
-      borderWidth="0px"
+      borderColor="whiteAlpha.900"
+      borderWidth="1px"
+      boxShadow="lg"
       {...rest}
       minW="180px"
       border="0px,5px,0px,5px"
