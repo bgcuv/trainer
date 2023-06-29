@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Nav from "@/components/Nav";
 export default function Home() {
   return (
     <>
@@ -10,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main></main>
+      <Nav left="tier-list" right="about" />
     </>
   );
 }

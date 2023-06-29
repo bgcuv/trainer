@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Heading, Text, Flex, Box, Image, HStack } from "@chakra-ui/react";
+import Nav from "@/components/Nav";
+import { Heading, Text, Flex, Box, Image, Feature } from "@chakra-ui/react";
 
 export default function About() {
   return (
@@ -31,21 +32,24 @@ export default function About() {
         <p>
           This app was developed by a team of dedicated, gamers from the Boys &
           Girls Club of the Umpqua Valley. The app was created to help Smash
-          Bros. Ultimate playres from around the world, regardless of skill,
+          Bros. Ultimate players from around the world, regardless of skill,
           level up their game.
         </p>
         <br></br>
-        <p>Contact Us At:</p>
+        <p>
+          <b>Contact Us At:</b>
+        </p>
         <p>Email@email.com</p>
         <br></br>
-        <p>Support Us</p>
+        <p>
+          <b>Support Us</b>
+        </p>
         <p>Help support our Club and this app by making a donation.</p>
         <br></br>
         <Flex>
           <Box>
             <Text>Money!</Text>
             <Image
-              alt=""
               boxSize="50px"
               src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
             />
@@ -53,7 +57,6 @@ export default function About() {
           <Box>
             <Text>Pizza!</Text>
             <Image
-              alt=""
               boxSize="50px"
               src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
             />
@@ -61,13 +64,27 @@ export default function About() {
           <Box>
             <Text>Coffee!</Text>
             <Image
-              alt=""
               boxSize="50px"
               src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
             />
           </Box>
         </Flex>
+        <br></br>
+        <br></br>
+        <Box>
+          <p>
+            <b>Socials</b>
+          </p>
+          <p>Drop Us a Line</p>
+          <Flex gap={4} flexWrap="wrap">
+            <Feature src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" />
+            <Feature src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" />
+            <Feature src="https://www.freepnglogos.com/uploads/twitch-logo-transparent-32.png" />
+            <Feature src="https://www.seekpng.com/png/full/807-8071516_transparent-youtube-play-logo-youtube-icon-blue-png.png" />
+          </Flex>
+        </Box>
       </Box>
+      <Nav left="trainer" right="" />
     </>
   );
 }

@@ -14,7 +14,7 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
-
+import Nav from "../components/Nav";
 const characters = [
   {
     name: "Bayonetta",
@@ -836,6 +836,7 @@ export default function TierList() {
           </Flex>
         </Flex>
       </Box>
+      <Nav left="tips" right="trainer" />
     </>
   );
 }
