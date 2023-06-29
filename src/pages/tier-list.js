@@ -19,74 +19,74 @@ const characters = [
   {
     name: "Bayonetta",
     image: "./portraits/full/bayonetta.png",
-    difficulty: 2,
-    strength: 3,
+    difficulty: 4,
+    strength: 5,
   },
   {
     name: "Bowser",
     image: "./portraits/full/bowser.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 5,
   },
   {
     name: "Bowser Jr.",
     image: "./portraits/full/bowser_jr.png",
-    difficulty: 1,
+    difficulty: 4,
     strength: 1,
   },
   {
     name: "Captain Falcon",
     image: "./portraits/full/captain_falcon.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 2,
   },
   {
     name: "Chrom",
     image: "./portraits/full/chrom.png",
     difficulty: 1,
-    strength: 1,
+    strength: 3,
   },
   {
     name: "Cloud",
     image: "./portraits/full/cloud.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 3,
+    strength: 5,
   },
   {
     name: "Corrin",
     image: "./portraits/full/corrin.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 5,
+    strength: 4,
   },
   {
     name: "Daisy",
     image: "./portraits/full/daisy.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 5,
   },
   {
     name: "Dark Pit",
     image: "./portraits/full/dark_pit.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 4,
   },
   {
     name: "Dark Samus",
     image: "./portraits/full/dark_samus.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 3,
+    strength: 4,
   },
   {
     name: "Diddy Kong",
     image: "./portraits/full/diddy_kong.png",
     difficulty: 1,
-    strength: 1,
+    strength: 3,
   },
   {
     name: "Donkey Kong",
     image: "./portraits/full/donkey_kong.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 5,
   },
   {
     name: "Dr. Mario",
@@ -97,56 +97,56 @@ const characters = [
   {
     name: "Duck Hunt",
     image: "./portraits/full/duck_hunt.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 4,
   },
   {
     name: "Falco",
     image: "./portraits/full/falco.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 3,
   },
   {
     name: "Fox",
     image: "./portraits/full/fox.png",
     difficulty: 1,
-    strength: 1,
+    strength: 5,
   },
   {
     name: "Ganondorf",
     image: "./portraits/full/ganondorf.png",
-    difficulty: 1,
+    difficulty: 5,
     strength: 1,
   },
   {
     name: "Greninja",
     image: "./portraits/full/greninja.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 4,
   },
   {
     name: "Ice Climbers",
     image: "./portraits/full/ice_climbers.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 5,
+    strength: 3,
   },
   {
     name: "Ike",
     image: "./portraits/full/ike.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 5,
   },
   {
     name: "Incineroar",
     image: "./portraits/full/incineroar.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 3,
+    strength: 5,
   },
   {
     name: "Inkling",
     image: "./portraits/full/inkling.png",
     difficulty: 1,
-    strength: 1,
+    strength: 3,
   },
   {
     name: "Isabelle",
@@ -157,14 +157,14 @@ const characters = [
   {
     name: "Jigglypuff",
     image: "./portraits/full/jigglypuff.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 3,
   },
   {
     name: "Ken",
     image: "./portraits/full/ken.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 5,
+    strength: 3,
   },
   {
     name: "King Dedede",
@@ -175,56 +175,56 @@ const characters = [
   {
     name: "King K Rool",
     image: "./portraits/full/king_k_rool.png",
-    difficulty: 1,
+    difficulty: 5,
     strength: 1,
   },
   {
     name: "Kirby",
     image: "./portraits/full/kirby.png",
     difficulty: 1,
-    strength: 1,
+    strength: 3,
   },
   {
     name: "Link",
     image: "./portraits/full/link.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 5,
   },
   {
     name: "Little Mac",
     image: "./portraits/full/little_mac.png",
-    difficulty: 1,
+    difficulty: 5,
     strength: 1,
   },
   {
     name: "Lucario",
     image: "./portraits/full/lucario.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 4,
+    strength: 4,
   },
   {
     name: "Lucas",
     image: "./portraits/full/lucas.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 3,
+    strength: 5,
   },
   {
     name: "Lucina",
     image: "./portraits/full/lucina.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 3,
+    strength: 3,
   },
   {
     name: "Luigi",
     image: "./portraits/full/luigi.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 4,
   },
   {
     name: "Mario",
     image: "./portraits/full/mario.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 4,
   },
   {
     name: "Marth",
@@ -235,8 +235,8 @@ const characters = [
   {
     name: "Mega Man",
     image: "./portraits/full/mega_man.png",
-    difficulty: 1,
-    strength: 1,
+    difficulty: 2,
+    strength: 3,
   },
   {
     name: "Meta Knight",
@@ -468,53 +468,372 @@ export default function TierList() {
       >
         <Flex direction="column" p={4} color="whiteAlpha.900">
           <Center>
-            <Heading size="3xl">Tier List</Heading>
+            <Heading size="3xl" p={4}>
+              Tier List
+            </Heading>
           </Center>
-          <Stack gap={4} p={4}>
-            {characters.map((character) => {
-              return (
-                <Card
-                  bg={"gray.700"}
-                  maxW="max-content"
-                  color="whiteAlpha.900"
-                  key={character.name}
-                >
-                  <CardHeader py={2}>{character.name}</CardHeader>
-                  <CardBody py={2}>
-                    <Image
-                      height="100px"
-                      width="200px"
-                      src={`${character.image}`}
-                      alt={character.name}
-                      objectFit="cover"
-                    />
-                  </CardBody>
-                  <CardFooter py={2}>
-                    <Flex direction="column">
-                      <Flex alignItems="center" gap={2}>
-                        <Text>Strength: </Text>
-                        <HStack alignItems="center" h="100%" w="100%">
-                          {Array.from(Array(character.strength)).map((star) => {
-                            return <StarIcon boxSize={4} key={star} />;
-                          })}
-                        </HStack>
-                      </Flex>
-                      <Flex alignItems="center" gap={2}>
-                        <Text>Difficulty: </Text>
-                        <HStack alignItems="center" h="100%" gap={1}>
-                          {Array.from(Array(character.difficulty)).map(
-                            (star) => {
-                              return <StarIcon boxSize={4} key={star} />;
-                            }
-                          )}
-                        </HStack>
-                      </Flex>
-                    </Flex>
-                  </CardFooter>
-                </Card>
-              );
-            })}
-          </Stack>
+          <Flex direction="column" flexGrow={1} maxW="100%" gap={4}>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  S
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 6)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  A
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 5)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  B
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 4)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  C
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 3)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  D
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 2)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+            <Flex gap={4}>
+              <Box width="40px">
+                <Heading size="3xl" width="40px">
+                  F
+                </Heading>
+              </Box>
+              <Flex gap={4} direction={"row"} flexWrap={"wrap"}>
+                {characters
+                  .filter((character) => character.strength === 1)
+                  .sort(
+                    (characterA, characterB) =>
+                      characterA.difficulty - characterB.difficulty
+                  )
+                  .map((character) => {
+                    return (
+                      <Card
+                        bg={"gray.700"}
+                        maxW="max-content"
+                        color="whiteAlpha.900"
+                        key={character.name}
+                      >
+                        <CardHeader py={2}>{character.name}</CardHeader>
+                        <CardBody py={2}>
+                          <Image
+                            height="100px"
+                            width="200px"
+                            src={`${character.image}`}
+                            alt={character.name}
+                            objectFit="cover"
+                          />
+                        </CardBody>
+                        <CardFooter py={2}>
+                          <Flex direction="column">
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Strength: </Text>
+                              <HStack alignItems="center" h="100%" w="100%">
+                                {Array.from(Array(character.strength)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                            <Flex alignItems="center" gap={2}>
+                              <Text>Difficulty: </Text>
+                              <HStack alignItems="center" h="100%" gap={1}>
+                                {Array.from(Array(character.difficulty)).map(
+                                  (star) => {
+                                    return <StarIcon boxSize={4} key={star} />;
+                                  }
+                                )}
+                              </HStack>
+                            </Flex>
+                          </Flex>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
+              </Flex>
+            </Flex>
+          </Flex>
         </Flex>
       </Box>
       <Nav left="tips" right="trainer" />
