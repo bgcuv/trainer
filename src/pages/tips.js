@@ -10,7 +10,6 @@ export default function Tips() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Box
         p={4}
         color="whiteAlpha.900"
