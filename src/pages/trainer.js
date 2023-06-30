@@ -1,3 +1,4 @@
+import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "@/components/Nav";
 export default function Home() {
@@ -9,7 +10,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <Flex
+        direction="column"
+        p={4}
+        color="whiteAlpha.900"
+        as="main"
+        height="100%"
+        bgGradient="linear(#191970, #9967A4, #C46E9D, #F48D86, #FEBC64, #FFDD5A)"
+      ></Flex>
       <Nav left="tier-list" right="about" />
     </>
   );
