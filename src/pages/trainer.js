@@ -37,7 +37,7 @@ const moves = [
   {
     buttons: [
       { src: "./arrow.png", rotation: -90 },
-      { src: "./a.png", rotation: -90 },
+      { src: "./a.png", rotation: 0 },
     ],
     name: "Up Smash",
   },
@@ -92,7 +92,21 @@ export default function Home() {
         <Center>
           <Heading>Trainer</Heading>
         </Center>
-        <Flex direction="column" h="100%" justify="center" align="center">
+        <Flex
+          position="relative"
+          direction="column"
+          h="100%"
+          justify="center"
+          align="center"
+        >
+          <Image
+            position="absolute"
+            left="auto"
+            right="auto"
+            bottom="50px"
+            height="200px"
+            src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon_thumb/6374e3ddc6da019b8d63d803662c47e7.png"
+          />
           <Flex direction="row" justify="center">
             {moves[moveIndex].buttons.map((button) => {
               return (
