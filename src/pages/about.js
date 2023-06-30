@@ -54,25 +54,21 @@ export default function About() {
         </Box>
         <br></br>
         <br></br>
-        <p>
-          <Center color="#a0f4a4">
-            <b>Contact Us At:</b>
-          </Center>
-        </p>
+        <Center color="#a0f4a4">
+          <b>Contact Us At:</b>
+        </Center>
         <Center>
           <p>Email@email.com</p>
         </Center>
         <br></br>
-        <p>
-          <Center color="#86e9f4">
-            <b>Support Us</b>
-          </Center>
-        </p>
-        <p>
-          <Center>
-            Help support our Club and this app by making a donation.
-          </Center>
-        </p>
+
+        <Center color="#86e9f4">
+          <b>Support Us</b>
+        </Center>
+
+        <Center>
+          Help support our Club and this app by making a donation.
+        </Center>
         <br></br>
         <br></br>
         <Flex gap={4} flexWrap="wrap" justify="center">
@@ -100,13 +96,10 @@ export default function About() {
         </Flex>
         <br></br>
         <Box>
-          <p>
-            <div>
-              <Center color="#9967a4" fontSize="lg">
-                <b>Socials</b>
-              </Center>
-            </div>
-          </p>
+          <Center color="#9967a4" fontSize="lg">
+            <b>Socials</b>
+          </Center>
+
           <Center>
             <p>Drop Us a Line</p>
           </Center>
