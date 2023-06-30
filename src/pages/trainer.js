@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Center, Flex, Heading } from "@chakra-ui/react";
+import { useState, useEffect, useRef } from "react";
+import { Center, Flex, Heading, Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "@/components/Nav";
 
@@ -32,19 +32,32 @@ const moves = [
 
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}
+
 export default function Home() {
   const [moveIndex, setMoveIndex] = useState(0);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      let newIndex = random(0, moves.length);
-      while (newIndex === moveIndex) {
-        newIndex = random(0, moves.length);
-      }
-      setMoveIndex(newIndex);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, []);
+  useInterval(() => {
+    setMoveIndex(random(0, moves.length));
+  }, 2000);
 
   return (
     <>
@@ -66,7 +79,10 @@ export default function Home() {
         <Center>
           <Heading>Trainer</Heading>
         </Center>
-        {moves[moveIndex].name}
+        <Flex direction="column" justify="center">
+          <Box>{moves[moveIndex].buttons}</Box>
+          <Box>{moves[moveIndex].name}</Box>
+        </Flex>
       </Flex>
       <Nav left="tier-list" right="about" />
     </>
