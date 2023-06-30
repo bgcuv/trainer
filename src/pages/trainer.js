@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Center, Flex, Heading, Box } from "@chakra-ui/react";
+import { Center, Flex, Heading, Box, Image, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "@/components/Nav";
 
@@ -9,24 +9,37 @@ import Nav from "@/components/Nav";
 // →⇉
 const moves = [
   {
-    buttons: "⇉ A",
+    buttons: [
+      { src: "./arrow.png", rotation: 0 },
+      { src: "./a.png", rotation: 0 },
+    ],
     name: "Forward Smash",
   },
   {
-    buttons: "⇉ B",
+    buttons: [
+      { src: "./arrow.png", rotation: 0 },
+      { src: "./b.png", rotation: 0 },
+    ],
     name: "Side Special",
   },
   {
-    buttons: "ZR or ZL",
+    buttons: [{ src: null, text: "ZR or ZL" }],
     name: "Shield",
   },
   {
-    buttons: "⇈ →",
+    buttons: [
+      { src: "./arrow.png", rotation: -90 },
+      { src: "./arrow.png", rotation: 0 },
+      { src: "./a.png", rotation: 0 },
+    ],
     name: "Forward Air",
   },
   {
-    buttons: "→",
-    name: "Forward Tilt",
+    buttons: [
+      { src: "./arrow.png", rotation: -90 },
+      { src: "./a.png", rotation: -90 },
+    ],
+    name: "Up Smash",
   },
 ];
 
@@ -79,11 +92,29 @@ export default function Home() {
         <Center>
           <Heading>Trainer</Heading>
         </Center>
-        <Flex direction="column" justify="center">
-          <Box>{moves[moveIndex].buttons}</Box>
-          <Box>{moves[moveIndex].name}</Box>
+        <Flex direction="column" h="100%" justify="center" align="center">
+          <Flex direction="row" justify="center">
+            {moves[moveIndex].buttons.map((button) => {
+              return (
+                <>
+                  {button.src && (
+                    <Image
+                      height="100px"
+                      width="100px"
+                      src={button.src}
+                      alt=""
+                      transform={`rotate(${button.rotation}deg)`}
+                    />
+                  )}
+                  {button.text && <Text>{button.text}</Text>}
+                </>
+              );
+            })}
+          </Flex>
+          <Flex>{moves[moveIndex].name}</Flex>
         </Flex>
       </Flex>
+
       <Nav left="tier-list" right="about" />
     </>
   );
