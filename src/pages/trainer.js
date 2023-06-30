@@ -30,8 +30,22 @@ const moves = [
   },
 ];
 
+const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
 export default function Home() {
-  const [move, setMove] = useState("jkd");
+  const [moveIndex, setMoveIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      let newIndex = random(0, moves.length);
+      while (newIndex === moveIndex) {
+        newIndex = random(0, moves.length);
+      }
+      setMoveIndex(newIndex);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Head>
@@ -52,7 +66,7 @@ export default function Home() {
         <Center>
           <Heading>Trainer</Heading>
         </Center>
-        {move}
+        {moves[moveIndex].name}
       </Flex>
       <Nav left="tier-list" right="about" />
     </>
