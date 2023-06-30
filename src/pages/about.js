@@ -4,20 +4,13 @@ import Nav from "@/components/Nav";
 
 function Feature({ title, desc, ...rest }) {
   return (
-    <Box
-      p={1}
-      borderColor="whiteAlpha.900"
-      borderWidth="1px"
-      boxShadow="lg"
-      {...rest}
-      minW="180px"
-      border="0px,5px,0px,5px"
-      padding="5px,0px,10px,0px"
-    >
+    <Box p={1} {...rest} minW="20px" minH="20px" padding="100,100,20,100">
       <Center flexDirection={"column"}>
         <Heading fontSize="lg">{title}</Heading>
-        <Text mt={1}>{desc}</Text>
-        <Image {...rest} boxSize="25px" />
+        <Text mt={1} color="whiteAlpha.900">
+          {desc}
+        </Text>
+        <Image {...rest} boxSize="50px" />
       </Center>
     </Box>
   );
@@ -33,6 +26,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box
+        px={4}
         height="100%"
         overflow="auto"
         as="main"
@@ -50,55 +44,77 @@ export default function About() {
         >
           About
         </Heading>
-        <p>
-          This app was developed by a team of dedicated, gamers from the Boys &
-          Girls Club of the Umpqua Valley. The app was created to help Smash
-          Bros. Ultimate players from around the world, regardless of skill,
-          level up their game.
-        </p>
+        <Box>
+          <p>
+            This app was developed by a team of dedicated, gamers from the Boys
+            & Girls Club of the Umpqua Valley. The app was created to help Smash
+            Bros. Ultimate players from around the world, regardless of skill,
+            level up their game.
+          </p>
+        </Box>
+        <br></br>
         <br></br>
         <p>
-          <b>Contact Us At:</b>
+          <Center color="#a0f4a4">
+            <b>Contact Us At:</b>
+          </Center>
         </p>
-        <p>Email@email.com</p>
+        <Center>
+          <p>Email@email.com</p>
+        </Center>
         <br></br>
         <p>
-          <b>Support Us</b>
+          <Center color="#86e9f4">
+            <b>Support Us</b>
+          </Center>
         </p>
-        <p>Help support our Club and this app by making a donation.</p>
+        <p>
+          <Center>
+            Help support our Club and this app by making a donation.
+          </Center>
+        </p>
         <br></br>
-        <Flex gap={4} flexWrap="wrap">
+        <br></br>
+        <Flex gap={4} flexWrap="wrap" justify="center">
           <Feature
+            color="#fa42ca"
             title="Money, Plz"
             fontSize="xs"
             desc="Help Fund our Project."
             src="https://cdn-icons-png.flaticon.com/512/3362/3362189.png"
           />
           <Feature
+            color="#4442f3"
             fontSize="xs"
             title="Pizza, Plz"
             desc="Help Feed our Coders"
             src="https://cdn.icon-icons.com/icons2/2113/PNG/512/pizza_icon_131067.png"
           />
           <Feature
+            color="#22dcc9"
             fontSize="xs"
-            title="Coffe, Plz"
+            title="Coffee, Plz"
             desc="Fuel our Coders"
             src="https://cdn-icons-png.flaticon.com/512/3127/3127336.png"
           />
         </Flex>
         <br></br>
-        <br></br>
         <Box>
           <p>
-            <b>Socials</b>
+            <div>
+              <Center color="#9967a4" fontSize="lg">
+                <b>Socials</b>
+              </Center>
+            </div>
           </p>
-          <p>Drop Us a Line</p>
-          <Flex gap={4} flexWrap="wrap">
-            <Feature src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" />
-            <Feature src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" />
+          <Center>
+            <p>Drop Us a Line</p>
+          </Center>
+          <Flex gap={4} flexWrap="wrap" justify="center">
+            <Feature src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" />
+            <Feature src="https://cdn.pixabay.com/photo/2020/10/17/13/19/facebook-5662065_1280.png" />
             <Feature src="https://www.freepnglogos.com/uploads/twitch-logo-transparent-32.png" />
-            <Feature src="https://www.seekpng.com/png/full/807-8071516_transparent-youtube-play-logo-youtube-icon-blue-png.png" />
+            <Feature src="https://www.tackfu.com/youtube-icon-blue.png" />
           </Flex>
         </Box>
       </Box>
