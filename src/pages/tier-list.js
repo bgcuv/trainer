@@ -50,7 +50,7 @@ const characters = [
     name: "Cloud",
     image: "./portraits/full/cloud.png",
     difficulty: 3,
-    strength: 5,
+    strength: 6,
   },
   {
     name: "Corrin",
